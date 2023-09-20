@@ -1,0 +1,42 @@
+#container {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+
+    img{
+        
+        transition: all 0.8s ease;
+        transform-origin: center;
+    }img:hover{
+        transform: scale(1.06);
+    }
+
+    #containerConteudo {
+        #fotoJ {
+            display: flex;
+
+        }
+    }
+}
+
+@media (min-width: 1536px) {
+    #container {
+        padding-bottom: 8em;
+    }
+}
+
+@media (max-width:900px) {
+    #container{
+        #containerFotos{
+            display: none;
+        }
+
+        p{
+            margin-left: 0;
+        }
+    }
+}
+
+@media(max-width:500px){
+    #container{
+        clip-path: none;
+    }
+}

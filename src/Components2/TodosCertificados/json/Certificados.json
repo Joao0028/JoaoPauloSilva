@@ -1,0 +1,170 @@
+[
+    {
+        "numero":"1",
+        "tipo":"HTML e CSS",
+        "imagem":"/Certificados/HTML__CSS/CSS1.PNG",
+        "link":"https://cursos.alura.com.br/certificate/7ed4bf64-4ab7-4809-84ec-56577da83e4b?lang=pt_BR"
+    },
+    {
+        "numero":"2",
+        "tipo":"HTML e CSS",
+        "imagem":"/Certificados/HTML__CSS/CSS2.PNG",
+        "link":"https://cursos.alura.com.br/certificate/8dbc6ba0-f0bb-4504-bf03-ca34b643efc1"
+    },
+    {
+        "numero":"3",
+        "tipo":"HTML e CSS",
+        "imagem":"/Certificados/HTML__CSS/CSS3.PNG",
+        "link":"https://cursos.alura.com.br/certificate/6623c877-8469-492e-b01b-d2b0dbabde07"
+    },
+    {
+        "numero":"4",
+        "tipo":"HTML e CSS",
+        "imagem":"/Certificados/HTML__CSS/CSS4.PNG",
+        "link":"https://cursos.alura.com.br/certificate/61ac172e-2e2a-451f-b401-c5960c487fa9"
+    },
+    {
+        "numero":"5",
+        "tipo":"HTML e CSS",
+        "imagem":"/Certificados/HTML__CSS/CSS5.PNG",
+        "link":"https://cursos.alura.com.br/certificate/f3e966b4-732a-4c92-9194-19c7e6290a90"
+    },
+    {
+        "numero":"6",
+        "tipo":"HTML e CSS",
+        "imagem":"/Certificados/HTML__CSS/CSS6.PNG",
+        "link":"https://cursos.alura.com.br/certificate/0992e660-7ed5-493d-b9d2-3b51db1d91e1"
+    },
+    {
+        "numero":"7",
+        "tipo":"HTML e CSS",
+        "imagem":"/Certificados/HTML__CSS/CSS7.PNG",
+        "link":"https://cursos.alura.com.br/certificate/45f914a5-6df9-4905-9bb0-630272e62c14"
+    },
+    {
+        "numero":"8",
+        "tipo":"HTML e CSS",
+        "imagem":"/Certificados/HTML__CSS/CSS8.PNG",
+        "link":""
+    }
+
+
+    ,
+    {
+        "numero":"1",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript1.PNG",
+        "link":"https://cursos.alura.com.br/certificate/b4973bba-d86e-4c03-8a3d-ec94fd9b06d3"
+    },
+    {
+        "numero":"2",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript2.PNG",
+        "link":"https://cursos.alura.com.br/certificate/f429bdc8-f433-4c1d-9212-ad50d68e29da?lang=pt_BR"
+    },
+    {
+        "numero":"3",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript3.PNG",
+        "link":"https://cursos.alura.com.br/certificate/96f02fdf-5d34-47e8-82da-5169680bcefe?lang=pt_BR"
+    },
+    {
+        "numero":"4",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript4.PNG",
+        "link":"https://cursos.alura.com.br/certificate/f4b373fc-b8fe-4240-89af-3a33ec94a19b"
+    },
+    {
+        "numero":"5",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript5.PNG",
+        "link":"https://cursos.alura.com.br/certificate/43f864ab-1d2c-40ca-b40c-712881fe6436"
+    },
+    {
+        "numero":"6",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript6.PNG",
+        "link":"https://cursos.alura.com.br/certificate/8d8607af-a725-476f-8496-0619f567a065"
+    },
+    {
+        "numero":"7",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript7.PNG",
+        "link":"https://cursos.alura.com.br/certificate/f0428fb7-7fec-44dd-9dcf-9c20e84e1aaa"
+    },
+    {
+        "numero":"8",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript8.PNG",
+        "link":"https://cursos.alura.com.br/certificate/e19abfc1-7e8d-4d05-a584-19cfd5b0bb51"
+    },
+    {
+        "numero":"9",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript9.PNG",
+        "link":"https://cursos.alura.com.br/certificate/f0ff24a5-0b89-489f-b5a6-918b2ec5d2d7"
+    },
+    {
+        "numero":"10",
+        "tipo":"Javascript",
+        "imagem":"/Certificados/Javascript/Javascript10.PNG",
+        "link":"https://cursos.alura.com.br/certificate/b3d5e263-6b60-4dd0-b6ac-e15b0e32f5f5"
+    }
+    
+    
+    ,
+    {
+        "numero":"1",
+        "tipo":"Sass",
+        "imagem":"/Certificados/Sass/Sass1.PNG",
+        "link":"https://cursos.alura.com.br/certificate/44c1c716-cf6b-4903-b45f-3198f098a1ef?lang=pt_BR"
+    }
+    
+    
+    ,
+    {
+        "numero":"1",
+        "tipo":"Tailwind",
+        "imagem":"/Certificados/Tailwind/Tailwind1.PNG",
+        "link":"https://cursos.alura.com.br/certificate/1d205fd6-d1ce-4f13-8470-8877f85be748?lang=pt_BR"
+    }
+    
+    
+    ,
+    {
+        "numero":"1",
+        "tipo":"React",
+        "imagem":"/Certificados/React/React1.PNG",
+        "link":"https://cursos.alura.com.br/certificate/eb9ed6ca-7ecb-4e1d-ab7e-fb795ab9ec8e?lang=pt_BR"
+    },
+    {
+        "numero":"2",
+        "tipo":"React",
+        "imagem":"/Certificados/React/React2.PNG",
+        "link":"https://cursos.alura.com.br/certificate/bf94756c-1336-4047-897a-6520b296e31e?lang=pt_BR"
+    },
+    {
+        "numero":"3",
+        "tipo":"React",
+        "imagem":"/Certificados/React/React3.PNG",
+        "link":"https://cursos.alura.com.br/certificate/94b4b134-4e83-4613-9c6e-2013e42b320f?lang=pt_BR"
+    },
+    {
+        "numero":"4",
+        "tipo":"React",
+        "imagem":"/Certificados/React/React4.PNG",
+        "link":"https://cursos.alura.com.br/certificate/7611c36f-8a18-408c-bbef-0b98a01b6f33?lang=pt_BR"
+    },
+    {
+        "numero":"5",
+        "tipo":"React",
+        "imagem":"/Certificados/React/React5.PNG",
+        "link":"https://cursos.alura.com.br/certificate/61f83881-be6b-4502-ac1c-e54c95f58b05?lang=pt_BR"
+    },
+    {
+        "numero":"6",
+        "tipo":"React",
+        "imagem":"/Certificados/React/React6.PNG",
+        "link":"https://cursos.alura.com.br/certificate/9896e8d3-4449-4613-ac78-4a39d6bbf997?lang=pt_BR"
+    }
+]

@@ -1,0 +1,9 @@
+#flutuar{
+        transition: all 0.9s ease;
+        transform-origin: center;
+    
+    &:hover{
+        transition: all 0.4s ease;
+        transform: scale(1.09);
+    }
+}

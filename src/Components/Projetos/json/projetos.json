@@ -1,0 +1,47 @@
+[
+    {
+        "id": 1,
+        "tituloDoProjeto": "JS Bank",
+        "tipo": "Não Responsivo - Página de cadastro",
+        "descricao": "Uma página web onde é possível fazer uma simulação de criação de conta báncaria, onde pude aprender algumas funções do Javascript que nunca tinha visto.  ",
+        "imagem": "/ImagensDeProjetos/JSbank.png",
+        "linkProjeto":"https://joao0028.github.io/JSbank/",
+        "linkRepositorio":"https://github.com/Joao0028/JSbank"
+    },
+    {
+        "id": 2,
+        "tituloDoProjeto": "JS Info",
+        "tipo": "Responsivo - Newslleter",
+        "descricao": "Uma página onde possui diversas informações de technologias Front-end e um pouco sobre mim, feita com React e onde pude absorver bastante conhecimento sobre React Router.",
+        "imagem": "/ImagensDeProjetos/JSNewsllleter.png",
+        "linkProjeto":"https://js-info.vercel.app/",
+        "linkRepositorio":"https://github.com/Joao0028/JS-Info"
+    },
+    {
+        "id": 3,
+        "tituloDoProjeto": "JS Space",
+        "tipo": "Não Responsivo - Landing Page",
+        "descricao": "Uma página estática onde pude aprender diversos conceitos sobre componentes React e pude estilizar aprender a usar SASS juntamente com React. ",
+        "imagem": "/ImagensDeProjetos/JSspace.png",
+        "linkProjeto":"https://js-space.vercel.app/",
+        "linkRepositorio":"https://github.com/Joao0028/JS-Space"
+    },
+    {
+        "id": 4,
+        "tituloDoProjeto": "Acerte o número secreto",
+        "tipo": "Responsivo - Game",
+        "descricao": "Um game de acertar um número aleatório, por reconhecimento de voz feito com HTML, CSS e Javascript. Nele pude aprender bastantes conceitos usados em Javascript .",
+        "imagem": "/ImagensDeProjetos/AcerteONumero.png",
+        "linkProjeto":"https://joao0028.github.io/NUMERO-SECRETO-GAME/",
+        "linkRepositorio":"https://github.com/Joao0028/NUMERO-SECRETO-GAME"
+    },
+    {
+        "id": 5,
+        "tituloDoProjeto": "Organo",
+        "tipo": "Não Responsivo - Página dinâmica",
+        "descricao": "Uma página web onde é possível criar cards para ordenar um time de pessoas feita com React. Este foi o meu primeiro projeto com React e pude absorver muitos conceitos da technologia. ",
+        "imagem": "/ImagensDeProjetos/Organo.png",
+        "linkProjeto":"https://organo-app.vercel.app/",
+        "linkRepositorio":"https://github.com/Joao0028/Organo.com"
+    }
+]

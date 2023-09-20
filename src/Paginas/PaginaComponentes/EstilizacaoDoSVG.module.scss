@@ -1,0 +1,11 @@
+@media (min-width:1024px){
+#containerImagem{
+    img{
+        transition: all 0.8s ease;
+        transform-origin: center;
+    }img:hover{
+        transition: all 0.8s ease;
+        transform: scale(1.06);
+    }
+}
+}
