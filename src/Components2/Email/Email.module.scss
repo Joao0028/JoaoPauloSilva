@@ -1,5 +1,8 @@
-#campoNome, #campoEmail, #campoAssunto, #campoMensagem {
-    
+#campoNome,
+#campoEmail,
+#campoAssunto,
+#campoMensagem {
+
     padding: 10px;
 
     &::placeholder {
@@ -7,7 +10,7 @@
         color: #828282;
     }
 
-    &:focus{
+    &:focus {
         box-shadow: 0 0 0 0;
         outline: 0;
         color: white;
@@ -16,16 +19,25 @@
     &:not(:placeholder-shown) {
         border-color: white;
         color: white;
-      }
+    }
 }
 
-@media (min-width:1280px){
-    #campoNome, #campoEmail, #campoAssunto, #campoMensagem{
+@media (min-width:1280px) {
+
+    #campoNome,
+    #campoEmail,
+    #campoAssunto,
+    #campoMensagem {
         padding: 12px;
     }
 }
-@media (min-width:1536px){
-    #campoNome, #campoEmail, #campoAssunto, #campoMensagem{
+
+@media (min-width:1536px) {
+
+    #campoNome,
+    #campoEmail,
+    #campoAssunto,
+    #campoMensagem {
         padding: 13px;
     }
 }

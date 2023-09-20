@@ -55,27 +55,27 @@ export const Email = () => {
 
     // Criar uma função para verificar o limite de e-mails
     function verificarLimite() {
-      // Obter o número de e-mails enviados do localStorage ou definir como zero se não existir
-      let emailsEnviados = localStorage.getItem("emailsEnviados") || 0;
-      // Obter a data da última vez que o usuário enviou um e-mail do localStorage ou definir como null se não existir
-      let ultimaData = localStorage.getItem("ultimaData") || null;
-      // Obter a data atual
-      let dataAtual = new Date();
-      // Obter o número da semana atual
-      let semanaAtual = Math.floor(dataAtual.getTime() / (1000 * 60 * 60 * 24 * 7));
-      // Se a última data não for null, obter o número da semana anterior
-      let semanaAnterior = ultimaData ? Math.floor(new Date(ultimaData).getTime() / (1000 * 60 * 60 * 24 * 7)) : null;
-      // Se a semana atual for diferente da semana anterior, redefinir o número de e-mails enviados para zero
-      if (semanaAtual !== semanaAnterior) {
-        emailsEnviados = 0;
-        localStorage.setItem("emailsEnviados", emailsEnviados);
-      }
-      // Se o número de e-mails enviados for menor que 3, retornar true
-      if (emailsEnviados < 3) {
-        return true;
-      }
-      // Se não, retornar false
-      return false;
+        // Obter o número de e-mails enviados do localStorage ou definir como zero se não existir
+        let emailsEnviados = localStorage.getItem("emailsEnviados") || 0;
+        // Obter a data da última vez que o usuário enviou um e-mail do localStorage ou definir como null se não existir
+        let ultimaData = localStorage.getItem("ultimaData") || null;
+        // Obter a data atual
+        let dataAtual = new Date();
+        // Obter o número da semana atual
+        let semanaAtual = Math.floor(dataAtual.getTime() / (1000 * 60 * 60 * 24 * 7));
+        // Se a última data não for null, obter o número da semana anterior
+        let semanaAnterior = ultimaData ? Math.floor(new Date(ultimaData).getTime() / (1000 * 60 * 60 * 24 * 7)) : null;
+        // Se a semana atual for diferente da semana anterior, redefinir o número de e-mails enviados para zero
+        if (semanaAtual !== semanaAnterior) {
+            emailsEnviados = 0;
+            localStorage.setItem("emailsEnviados", emailsEnviados);
+        }
+        // Se o número de e-mails enviados for menor que 3, retornar true
+        if (emailsEnviados < 3) {
+            return true;
+        }
+        // Se não, retornar false
+        return false;
     }
 
     function enviarEmail(e) {
@@ -91,39 +91,39 @@ export const Email = () => {
 
         // Verificar se o usuário pode enviar um e-mail
         if (verificarLimite()) {
-          // Incrementar o número de e-mails enviados no localStorage
-          let emailsEnviados = localStorage.getItem("emailsEnviados") || 0;
-          emailsEnviados++;
-          localStorage.setItem("emailsEnviados", emailsEnviados);
-          // Atualizar a data da última vez que o usuário enviou um e-mail no localStorage
-          let dataAtual = new Date();
-          localStorage.setItem("ultimaData", dataAtual);
+            // Incrementar o número de e-mails enviados no localStorage
+            let emailsEnviados = localStorage.getItem("emailsEnviados") || 0;
+            emailsEnviados++;
+            localStorage.setItem("emailsEnviados", emailsEnviados);
+            // Atualizar a data da última vez que o usuário enviou um e-mail no localStorage
+            let dataAtual = new Date();
+            localStorage.setItem("ultimaData", dataAtual);
 
-          const tampleteDoEmail = {
-              Nome: nome,
-              Assunto: assunto,
-              Mensagem: mensagem,
-              Email: email
-          }
+            const tampleteDoEmail = {
+                Nome: nome,
+                Assunto: assunto,
+                Mensagem: mensagem,
+                Email: email
+            }
 
-          emailjs.send("service_jt3ropf", "template_ptfcj5k", tampleteDoEmail, "SXBwQfReULiJMTwIB")
-              .then((response) => {
-                  if (response.status === 200) {
-                      // Chamar a função notify
-                      notify();
-                  }
-                  console.log("Email enviado com sucesso!", response.status)
-                  setNome("");
-                  setEmail("");
-                  setAssunto("");
-                  setMensagem("");
-              }, (erro) => {
-                  notifyLimiteMaximoMensal()
-                  console.log("Erro: ", erro);
-              })
+            emailjs.send("service_jt3ropf", "template_ptfcj5k", tampleteDoEmail, "SXBwQfReULiJMTwIB")
+                .then((response) => {
+                    if (response.status === 200) {
+                        // Chamar a função notify
+                        notify();
+                    }
+                    console.log("Email enviado com sucesso!", response.status)
+                    setNome("");
+                    setEmail("");
+                    setAssunto("");
+                    setMensagem("");
+                }, (erro) => {
+                    notifyLimiteMaximoMensal()
+                    console.log("Erro: ", erro);
+                })
         } else {
-          // Chamar a função notifyError
-          notifyError();
+            // Chamar a função notifyError
+            notifyError();
         }
     }
 
@@ -131,7 +131,7 @@ export const Email = () => {
     return <form className="flex flex-col gap-2 min-[880px]:w-[500px] min-[1280px]:w-[600px] min-[1534px]:w-[650px]" onSubmit={enviarEmail} ref={formRef} >
 
         <div className="max-sm:flex-col min-[880px]:flex-col xl:flex-row flex gap-2 ">
-            <input value={nome} id={styles.campoNome} required placeholder="Nome" className="text-cor-roxo max-lg:w-[100%] min-lg:w-[50%] xl:w-[50%]  campoEmail paragrafos " type="text" autoComplete="name"  name="Nome" onChange={(e) => setNome(e.target.value)} />
+            <input value={nome} id={styles.campoNome} required placeholder="Nome" className="text-cor-roxo max-lg:w-[100%] min-lg:w-[50%] xl:w-[50%]  campoEmail paragrafos " type="text" autoComplete="name" name="Nome" onChange={(e) => setNome(e.target.value)} />
             <input value={email} id={styles.campoEmail} required placeholder="E-mail" className="max-lg:w-[100%] min-lg:w-[50%] xl:w-[50%]  campoEmail paragrafos " type="email" autoComplete="email" name="Email" onChange={(e) => setEmail(e.target.value)} />
         </div>
 

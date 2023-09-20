@@ -1,11 +1,12 @@
 #container {
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
 
-    img{
-        
+    img {
         transition: all 0.8s ease;
         transform-origin: center;
-    }img:hover{
+    }
+
+    img:hover {
         transform: scale(1.06);
     }
 
@@ -24,19 +25,19 @@
 }
 
 @media (max-width:900px) {
-    #container{
-        #containerFotos{
+    #container {
+        #containerFotos {
             display: none;
         }
 
-        p{
+        p {
             margin-left: 0;
         }
     }
 }
 
-@media(max-width:500px){
-    #container{
+@media(max-width:500px) {
+    #container {
         clip-path: none;
     }
 }

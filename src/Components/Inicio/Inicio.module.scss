@@ -7,16 +7,18 @@
 }
 
 #containerImagem {
-    img{
+    img {
         width: 350px;
         transition: all 0.8s ease;
         transform-origin: center;
-    }img:hover{
+    }
+
+    img:hover {
         transform: scale(1.06);
     }
-    
-    
-    
+
+
+
     @media (min-width:1024px) {
         img {
             width: 420px;

@@ -1,8 +1,9 @@
-#container{
+#container {
     clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 }
-@media(max-width:500px){
-    #container{
+
+@media(max-width:500px) {
+    #container {
         clip-path: none;
     }
 }

@@ -20,9 +20,9 @@ export default function PaginaComponentes() {
             <SobreMim />
             </div>
             <Projetos />
-            <Certificados/>
-            <Contato/>
-            <Footer/>
+            <Certificados />
+            <Contato />
+            <Footer />
         </>
     )
 }

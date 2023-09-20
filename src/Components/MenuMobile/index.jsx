@@ -1,7 +1,7 @@
 import styles from "./MenuMobile.module.scss"
 import { Link } from "react-scroll"
 
-export default function MenuMobile({fechaMenu}){
+export default function MenuMobile({ fechaMenu }) {
 
     return <nav id={styles.menu} className=" md:hidden flex justify-center z-10 fixed top-[75px] h-full w-full bg-gradient-to-t text-cor-branco font-bold from-cor-azulEscuro to-cor-azulClaroPrincipal dark:from-[#151515] dark:to-[#151515]">
 
