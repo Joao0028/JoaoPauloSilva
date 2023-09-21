@@ -22,6 +22,21 @@ O site é composto por cinco seções:
 - Sass
 - Figma
 
+
+## ⚙Instalação
+
+- Instale em seu computador o NodeJS (preferência pela versão LTS) disponível no site https://nodejs.org/en.
+- Para visualizar o código do projeto, realize o clone do projeto para sua máquina local.
+- Abra a pasta em uma IDE de sua preferência.
+- Abra um terminal de sua preferência e insira o seguinte comando para instalar as dependências necessárias:
+```bash
+  npm install
+```
+- Em seguida, insira o seguinte comando para iniciar a aplicação em modo de desenvolvimento:
+```bash
+  npm run dev
+```
+
 <hr/>
 
 <a href="https://portfolio-jps.vercel.app/">Clique aqui para ser redirecionado ao projeto.</a>
