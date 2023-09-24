@@ -1,3 +1,3 @@
 export default function PaginaDeProjetos() {
-    return <h1>Página de projetos</h1>
+  return <h1>Página de projetos</h1>;
 }
