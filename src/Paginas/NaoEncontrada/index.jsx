@@ -9,7 +9,7 @@ export const NaoEncontrada = () => {
     <>
       <HeaderTwo />
 
-      <section className="flex lg:mb-24 lg:mt-40 max-lg:mt-36 justify-center">
+      <section className="flex lg:mb-24 lg:mt-40 max-lg:mt-40 justify-center">
         <main className="container">
           <div className="flex justify-center mb-3">
             <img
@@ -44,7 +44,7 @@ export const NaoEncontrada = () => {
         </main>
       </section>
 
-      <div className=" max-lg:fixed max-lg:bottom-0  max-lg:w-full">
+      <div className=" max-md:hidden max-lg:fixed max-lg:bottom-0 max-lg:w-full">
         <Footer />
       </div>
     </>
