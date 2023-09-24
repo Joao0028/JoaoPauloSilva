@@ -6,13 +6,14 @@
 
 ## 📋 Sobre
 
-O site é composto por cinco seções:
+O site é composto por cinco seções principais:
 
 - **Inicio:** Nele temos uma breve apresentação contendo os meus três principais links;
 - **Sobre mim:** Nessa seção tem uma descrição sobre mim e meus objetivos como desenvolvedor web;
 - **Projetos:** Abordo alguns projetos e deixo os links para ver o repositório e o projeto;
 - **Certificados:** Apresento todos os meus certificados adquiridos até agora;
 - **Contato:** Uma tela onde é possível escrever um e-mail para mim e ver minhas principais redes de contato;
+- **Observação:** O site possuí uma tela de error 404 e uma tela que está em construção em "Ver mais" em Projetos;
 
 
 ## 💻Tecnologias principais
