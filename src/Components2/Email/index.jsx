@@ -3,7 +3,7 @@ import styles from "./Email.module.scss"
 import emailjs from "@emailjs/browser"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import stylesLoader from "./LoaderEmail.module.scss"
 
 export const Email = () => {
 
@@ -11,6 +11,7 @@ export const Email = () => {
     const [email, setEmail] = useState("");
     const [assunto, setAssunto] = useState("");
     const [mensagem, setMensagem] = useState("");
+    const [loading, setLoading] = useState(false);
 
     function notify() {
         toast.success("E-mail enviado com sucesso!", {
@@ -86,6 +87,7 @@ export const Email = () => {
         setEmail(email);
         setAssunto(assunto);
         setMensagem(mensagem);
+        setLoading(true)
 
         formRef.current.reset();
 
@@ -112,23 +114,30 @@ export const Email = () => {
                         // Chamar a função notify
                         notify();
                     }
+                    setLoading(false)
                     console.log("Email enviado com sucesso!", response.status)
                     setNome("");
                     setEmail("");
                     setAssunto("");
                     setMensagem("");
                 }, (erro) => {
+                    setLoading(false)
                     notifyLimiteMaximoMensal()
                     console.log("Erro: ", erro);
                 })
         } else {
             // Chamar a função notifyError
+            setLoading(false)
             notifyError();
         }
     }
 
 
-    return <form className="flex flex-col gap-2 min-[880px]:w-[500px] min-[1280px]:w-[600px] min-[1534px]:w-[650px]" onSubmit={enviarEmail} ref={formRef} >
+    return <>
+
+    { loading && <div className={stylesLoader.loader}></div> }
+
+    <form className="flex flex-col gap-2 min-[880px]:w-[500px] min-[1280px]:w-[600px] min-[1534px]:w-[650px]" onSubmit={enviarEmail} ref={formRef} >
 
         <div className="max-sm:flex-col min-[880px]:flex-col xl:flex-row flex gap-2 ">
             <input value={nome} id={styles.campoNome} required placeholder="Nome" className="text-cor-roxo max-lg:w-[100%] min-lg:w-[50%] xl:w-[50%]  campoEmail paragrafos " type="text" autoComplete="name" name="Nome" onChange={(e) => setNome(e.target.value)} />
@@ -141,4 +150,5 @@ export const Email = () => {
         <input className="w-full py-3 font-bold hover:opacity-90 cursor-pointer bg-cor-azulClaroPrincipal paragrafos dark:bg-cor-roxo active:text-cor-azulClaroPrincipal active:bg-cor-branco dark:active:bg-cor-branco dark:active:text-cor-roxo" type="submit" value="Enviar" />
 
     </form>
+    </>
 }
