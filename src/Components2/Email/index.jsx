@@ -91,8 +91,9 @@ export const Email = () => {
 
         formRef.current.reset();
 
-        // Verificar se o usuário pode enviar um e-mail
-        if (verificarLimite()) {
+       setTimeout(() => {
+         // Verificar se o usuário pode enviar um e-mail
+         if (verificarLimite()) {
             // Incrementar o número de e-mails enviados no localStorage
             let emailsEnviados = localStorage.getItem("emailsEnviados") || 0;
             emailsEnviados++;
@@ -130,12 +131,13 @@ export const Email = () => {
             setLoading(false)
             notifyError();
         }
+       }, 2000);
     }
 
 
     return <>
 
-    { loading && <div className={stylesLoader.loader}></div> }
+    { loading && <section className="w-full flex justify-center"><div className={stylesLoader.loader}></div></section> }
 
     <form className="flex flex-col gap-2 min-[880px]:w-[500px] min-[1280px]:w-[600px] min-[1534px]:w-[650px]" onSubmit={enviarEmail} ref={formRef} >
 
