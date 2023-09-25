@@ -13,8 +13,7 @@ O site é composto por cinco seções principais:
 - **Projetos:** Abordo alguns projetos e deixo os links para ver o repositório e o projeto;
 - **Certificados:** Apresento todos os meus certificados adquiridos até agora;
 - **Contato:** Uma tela onde é possível escrever um e-mail para mim e ver minhas principais redes de contato;
-- **Observação:** O site possuí uma tela de error 404 e uma tela que está em construção em "Ver mais" em Projetos;
-
+- **Observação:** O site possuí uma tela de error 404 e uma página que está em construção ainda em Projetos > Ver mais;
 
 ## 💻Tecnologias principais
 
