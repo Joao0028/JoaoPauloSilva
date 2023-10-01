@@ -167,4 +167,13 @@
         "imagem":"/Certificados/React/React6.PNG",
         "link":"https://cursos.alura.com.br/certificate/9896e8d3-4449-4613-ac78-4a39d6bbf997?lang=pt_BR"
     }
+
+    ,
+
+    {
+        "numero":"1",
+        "tipo":"Git",
+        "imagem":"/Certificados/Git/Git1.PNG",
+        "link":"https://cursos.alura.com.br/certificate/24131d10-ca30-4fb2-9710-977e61be282f?lang=pt_BR"
+    }
 ]
