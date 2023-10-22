@@ -11,7 +11,7 @@ export default function Inicio() {
     function fazDownloadDoCurriculo(valor){
         const url = valor;
         if(valor === "https://joao0028.github.io/Ladding-Page-Curriculo/"){
-        window.location.href = valor
+            window.open(valor, "_blank")
         }else{
             const nomeDoCV = valor === "/src/assets/CurriculoPadrão.pdf"? "Currículo Padrão JPS" : "Currículo Personalizado JPS";
             saveAs( url, nomeDoCV)
