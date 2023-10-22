@@ -4,8 +4,24 @@ import styles from "./Inicio.module.scss"
 import ProgramadorWhite from "../../assets/Svgs/ProgramadorWhite.svg"
 import ProgramadorBlack from "../../assets/Svgs/ProgramadorBlack.svg"
 import Curriculo from "../../assets/Curriculo.pdf"
+import { useState } from "react"
+import { saveAs } from "file-saver"
 
 export default function Inicio() {
+    function fazDownloadDoCurriculo(valor){
+        const url = valor;
+        const nomeDoCV = "JoãoPauloCV.pdf";
+        saveAs( url, nomeDoCV)
+    }
+
+    function recebeOcurriculo(evento){
+        const opcaoSelecionada = evento.target.value;
+        if(opcaoSelecionada !== ""){
+            fazDownloadDoCurriculo(opcaoSelecionada)
+            evento.target.value = "";
+        }
+    }
+
     return <>
         <strong id="inicio" className="text-transparent">.</strong>
 
@@ -19,14 +35,24 @@ export default function Inicio() {
                         <div className="hidden dark:block">
                             <Botao target={"_blank"} link="https://github.com/Joao0028" texto="Github" />
                             <Botao target={"_blank"} link="https://www.linkedin.com/in/jo%C3%A3o-paulo-nascimento-silva/" texto="LinkedIn" />
-                            <Botao target={"_blank"} downloaD={true} link={Curriculo} texto="Currículo" />
+                            <select onChange={recebeOcurriculo} className="dark:inline  botaoInicioPadrao botaoInicioSm botaoSelect max-sm:rounded-sm"  defaultValue="">
+                                <option value="" className="hidden" disabled>Currículo</option>
+                                <option className="optionStyle" value={Curriculo}>Padrão</option>
+                                <option className="optionStyle" value={Curriculo} >Personalizado</option>
+                            </select>
                         </div>
 
                         <div className="block dark:hidden">
                             <BotaoWhite target={"_blank"} link="https://github.com/Joao0028" texto="Github" />
                             <BotaoWhite target={"_blank"} link="https://www.linkedin.com/in/jo%C3%A3o-paulo-nascimento-silva/" texto="LinkedIn" />
-                            <BotaoWhite target={"_blank"} downloaD={true} link={Curriculo} texto="Currículo" />
+                            
+                        <select onChange={recebeOcurriculo} className="dark:hidden"  defaultValue="" id={styles.botao}>
+                            <option value="" className="hidden" disabled>Currículo</option>
+                            <option className="optionStyle" value={Curriculo}>Padrão</option>
+                            <option className="optionStyle" value={Curriculo} >Personalizado</option>
+                        </select>
                         </div>
+                        
                     </div>
 
                 </nav>

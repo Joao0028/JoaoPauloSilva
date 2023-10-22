@@ -1,72 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-    html{
-        font-family: 'Montserrat', sans-serif;
-    }
+@layer base {
+  html {
+    font-family: "Montserrat", sans-serif;
+  }
 
-    body::-webkit-scrollbar {
-        @apply 2xl:w-3 lg:w-2
-      }
-      body::-webkit-scrollbar-track {
-        @apply bg-[#E3E3E3] dark:bg-cor-cinzaClaro
-      }
-      body::-webkit-scrollbar-thumb {
-        @apply dark:bg-cor-roxo rounded-xl bg-cor-azulClaroPrincipal
-      }
-
+  body::-webkit-scrollbar {
+    @apply 2xl:w-3 lg:w-2;
+  }
+  body::-webkit-scrollbar-track {
+    @apply bg-[#E3E3E3] dark:bg-cor-cinzaClaro;
+  }
+  body::-webkit-scrollbar-thumb {
+    @apply dark:bg-cor-roxo rounded-xl bg-cor-azulClaroPrincipal;
+  }
 }
 
-@layer components{
+@layer components {
+  .container_header {
+    @apply w-full px-[2.5rem] max-w-[1400px];
+  }
+  .container {
+    @apply w-full px-[2.5rem] max-w-[1200px] 2xl:max-w-[1300px];
+  }
 
-    .container_header{
-        @apply w-full px-[2.5rem] max-w-[1400px]
-    }
-    .container{
-        @apply w-full px-[2.5rem] max-w-[1200px] 2xl:max-w-[1300px]
-    }
+  //Botao padrão
+  .botaoInicioPadrao {
+    @apply text-white text-[12px] rounded-[3px] cursor-pointer w-[80px] mr-3 mt-2 py-2 dark:bg-gradient-to-r dark:from-cor-roxo dark:to-cor-roxo hover:opacity-90;
+  }
+  //Botao Responsividade
+  .botaoInicioSm {
+    @apply sm:text-[15px] sm:w-[98px] md:w-[97px] lg:text-[20px] lg:w-[145px] xl:w-[164px];
+  }
 
-    //Botao padrão
-    .botaoInicioPadrao{
-        @apply text-white text-[12px] rounded-[3px] cursor-pointer w-[80px] mr-3 mt-2 py-2 dark:bg-gradient-to-r dark:from-cor-roxo dark:to-cor-roxo hover:opacity-90
-    }
-    //Botao Responsividade
-    .botaoInicioSm{
-        @apply sm:text-[15px] sm:w-[98px] md:w-[97px] lg:text-[20px] lg:w-[145px] xl:w-[164px] 
-    }
+  .titulosDeSecoes {
+    @apply font-bold 2xl:text-[40px] lg:text-[30px] md:text-[25px]  sm:text-[24px] text-[22px];
+  }
+  .subtitulosDeSecoes {
+    @apply 2xl:text-[12px] text-[#FFFFFFA1] lg:text-[10px] text-[8px] md:text-[9px];
+  }
 
-    .titulosDeSecoes{
-        @apply font-bold 2xl:text-[40px] lg:text-[30px] md:text-[25px]  sm:text-[24px] text-[22px]
-    }
-    .subtitulosDeSecoes{
-        @apply 2xl:text-[12px] text-[#FFFFFFA1] lg:text-[10px] text-[8px] md:text-[9px]
-    }
+  .paragrafos {
+    @apply text-[13px] sm:text-[14px] md:text-[14px] lg:text-[15px] 2xl:text-[18px] dark:text-cor-branco;
+  }
+  .SUB {
+    @apply text-[10px] sm:text-[11px] md:text-[13px] lg:text-[14px] 2xl:text-[15px] dark:text-cor-branco;
+  }
 
-    .paragrafos{
-        @apply text-[13px] sm:text-[14px] md:text-[14px] lg:text-[15px] 2xl:text-[18px] dark:text-cor-branco;
-    }
-    .SUB{
-        @apply text-[10px] sm:text-[11px] md:text-[13px] lg:text-[14px] 2xl:text-[15px] dark:text-cor-branco;
-    }
+  .campoEmail {
+    @apply bg-transparent caret-cor-azulClaroPrincipal dark:caret-cor-roxo border-solid border-2  border-cor-cinzaSubtituloWhite text-cor-cinzaSubtituloWhite;
+  }
 
-    .campoEmail{
-        @apply bg-transparent caret-cor-azulClaroPrincipal dark:caret-cor-roxo border-solid border-2  border-cor-cinzaSubtituloWhite text-cor-cinzaSubtituloWhite;
-    }
+  .iconesContato {
+    @apply text-cor-branco dark:text-cor-roxo max-sm:text-[20px] sm:text-[22px] md:text-[24px];
+  }
 
-    .iconesContato{
-        @apply  text-cor-branco dark:text-cor-roxo max-sm:text-[20px] sm:text-[22px] md:text-[24px];
-    }
+  .estiloIconeContato {
+    @apply bg-cor-cinzaClaro dark:bg-[#191919] hover:opacity-90 rounded-full w-fit m-auto mb-2 max-sm:p-4 sm:p-5 md:p-6;
+  }
 
-    .estiloIconeContato{
-        @apply  bg-cor-cinzaClaro dark:bg-[#191919] hover:opacity-90 rounded-full w-fit m-auto mb-2 max-sm:p-4 sm:p-5 md:p-6;
-    }
+  .subContato {
+    @apply font-bold text-cor-cinzaSubtituloWhite dark:text-cor-cinzaSubtituloWhite whitespace-nowrap text-center;
+  }
 
-    .subContato{
-        @apply font-bold text-cor-cinzaSubtituloWhite dark:text-cor-cinzaSubtituloWhite whitespace-nowrap text-center;
-    }
+  .botaoSelect{
+    -webkit-appearance: none; /* Remove a seta no Safari e no Chrome */
+    -moz-appearance: none; /* Remove a seta no Firefox */
+    appearance: none; 
+    @apply text-center border-0 outline-none
+  }
+
+  .optionStyle {
+    @apply text-cor-preto font-medium dark:text-cor-roxo
+  }
 }
-
