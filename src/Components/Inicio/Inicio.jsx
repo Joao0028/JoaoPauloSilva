@@ -44,6 +44,7 @@ export default function Inicio() {
                                 <option value="" className="hidden" disabled>Currículo</option>
                                 <option className="optionStyle" value={CurriculoPadrao}>Padrão</option>
                                 <option className="optionStyle" value={CurriculoPersonalizado} >Personalizado</option>
+                                <option className="optionStyle" value="https://joao0028.github.io/Ladding-Page-Curriculo/" >Landing Page</option>
                             </select>
                         </div>
 
