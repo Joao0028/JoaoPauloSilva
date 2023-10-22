@@ -5,7 +5,6 @@ import ProgramadorWhite from "../../assets/Svgs/ProgramadorWhite.svg"
 import ProgramadorBlack from "../../assets/Svgs/ProgramadorBlack.svg"
 import CurriculoPersonalizado from "../../assets/CurriculoPersonalizado.pdf"
 import CurriculoPadrao from "../../assets/CurriculoPadrão.pdf"
-import { useState } from "react"
 import { saveAs } from "file-saver"
 
 export default function Inicio() {
