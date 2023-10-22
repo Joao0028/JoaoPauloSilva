@@ -3,15 +3,20 @@ import { BotaoWhite } from "../Botoes/BotaoWhite/BotaoWhite"
 import styles from "./Inicio.module.scss"
 import ProgramadorWhite from "../../assets/Svgs/ProgramadorWhite.svg"
 import ProgramadorBlack from "../../assets/Svgs/ProgramadorBlack.svg"
-import Curriculo from "../../assets/Curriculo.pdf"
+import CurriculoPersonalizado from "../../assets/CurriculoPersonalizado.pdf"
+import CurriculoPadrao from "../../assets/CurriculoPadrão.pdf"
 import { useState } from "react"
 import { saveAs } from "file-saver"
 
 export default function Inicio() {
     function fazDownloadDoCurriculo(valor){
         const url = valor;
-        const nomeDoCV = "JoãoPauloCV.pdf";
-        saveAs( url, nomeDoCV)
+        if(valor === "https://joao0028.github.io/Ladding-Page-Curriculo/"){
+        window.location.href = valor
+        }else{
+            const nomeDoCV = valor === "/src/assets/CurriculoPadrão.pdf"? "Currículo Padrão JPS" : "Currículo Personalizado JPS";
+            saveAs( url, nomeDoCV)
+        }
     }
 
     function recebeOcurriculo(evento){
@@ -37,8 +42,8 @@ export default function Inicio() {
                             <Botao target={"_blank"} link="https://www.linkedin.com/in/jo%C3%A3o-paulo-nascimento-silva/" texto="LinkedIn" />
                             <select onChange={recebeOcurriculo} className="dark:inline  botaoInicioPadrao botaoInicioSm botaoSelect max-sm:rounded-sm"  defaultValue="">
                                 <option value="" className="hidden" disabled>Currículo</option>
-                                <option className="optionStyle" value={Curriculo}>Padrão</option>
-                                <option className="optionStyle" value={Curriculo} >Personalizado</option>
+                                <option className="optionStyle" value={CurriculoPadrao}>Padrão</option>
+                                <option className="optionStyle" value={CurriculoPersonalizado} >Personalizado</option>
                             </select>
                         </div>
 
@@ -48,8 +53,9 @@ export default function Inicio() {
                             
                         <select onChange={recebeOcurriculo} className="dark:hidden"  defaultValue="" id={styles.botao}>
                             <option value="" className="hidden" disabled>Currículo</option>
-                            <option className="optionStyle" value={Curriculo}>Padrão</option>
-                            <option className="optionStyle" value={Curriculo} >Personalizado</option>
+                            <option className="optionStyle" value={CurriculoPadrao}>Padrão</option>
+                            <option className="optionStyle" value={CurriculoPersonalizado} >Personalizado</option>
+                            <option className="optionStyle" value="https://joao0028.github.io/Ladding-Page-Curriculo/" >Landing Page</option>
                         </select>
                         </div>
                         

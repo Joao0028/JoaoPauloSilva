@@ -75,6 +75,6 @@
   }
 
   .optionStyle {
-    @apply text-cor-preto font-medium dark:text-cor-roxo
+    @apply text-cor-preto font-medium dark:text-cor-roxo max-sm:text-[10px]  max-lg:text-[13px]
   }
 }
