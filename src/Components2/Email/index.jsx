@@ -1,11 +1,11 @@
-import { useRef, useState } from "react"
+import { memo, useRef, useState } from "react"
 import styles from "./Email.module.scss"
 import emailjs from "@emailjs/browser"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import stylesLoader from "./LoaderEmail.module.scss"
 
-export const Email = () => {
+const Email = () => {
 
     const [nome, setNome] = useState("");
     const [email, setEmail] = useState("");
@@ -152,3 +152,5 @@ export const Email = () => {
     </form>
     </>
 }
+
+export default memo(Email)
