@@ -1,9 +1,5 @@
 import "./Styles/estilosGlobais.scss";
-// import PaginaComponentes from './Paginas/PaginaComponentes'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-// import PaginaDeCertificados from "./Paginas/PaginaDeCertificados";
-// import { NaoEncontrada } from "./Paginas/NaoEncontrada";
-// import PaginaDeProjetos from "./Paginas/PaginaDeProjetos";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Suspense, lazy } from "react";

@@ -1,8 +1,9 @@
+import { memo } from "react";
 import Projeto from "../Projeto";
 import meusProjetos from "./json/projetos.json"
 import { Link } from "react-router-dom";
 
-export default function Projetos() {
+function Projetos() {
     return <section className="flex justify-center">
 
         <div className="container">
@@ -30,3 +31,5 @@ export default function Projetos() {
         </div>
     </section>
 }
+
+export default memo(Projetos)

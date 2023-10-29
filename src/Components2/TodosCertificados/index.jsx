@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom"
 import { CertificadoTwo } from "../CertificadoTwo/index"
 import certificados from "./json/Certificados.json"
+import { memo } from "react"
 
-export default function TodosCertificados() {
+function TodosCertificados() {
     return <>
         <section className="flex justify-center w-full max  py-20 text-cor-preto  dark:text-cor-branco dark:bg-[#121212] ">
 
@@ -35,3 +36,5 @@ export default function TodosCertificados() {
         <strong id="contato"></strong>
     </>
 }
+
+export default memo(TodosCertificados)
