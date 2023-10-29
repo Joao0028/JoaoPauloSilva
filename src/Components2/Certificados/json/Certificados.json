@@ -2,25 +2,25 @@
     {
         "id":"1",
         "tipo":"React",
-        "imagem":"/Certificados/React/React1.PNG",
+        "imagem":"https://raw.githubusercontent.com/Joao0028/imagensPortfolio/main/Certificados/React/React1.PNG",
         "link":"https://cursos.alura.com.br/certificate/eb9ed6ca-7ecb-4e1d-ab7e-fb795ab9ec8e?lang=pt_BR"
     },
     {
         "id":"2",
         "tipo":"Sass",
-        "imagem":"/Certificados/Sass/Sass1.PNG",
+        "imagem":"https://raw.githubusercontent.com/Joao0028/imagensPortfolio/main/Certificados/Sass/Sass1.PNG",
         "link":"https://cursos.alura.com.br/certificate/44c1c716-cf6b-4903-b45f-3198f098a1ef?lang=pt_BR"
     },
     {
         "id":"3",
         "tipo":"Tailwind",
-        "imagem":"/Certificados/Tailwind/Tailwind1.PNG",
+        "imagem":"https://raw.githubusercontent.com/Joao0028/imagensPortfolio/main/Certificados/Tailwind/Tailwind1.PNG",
         "link":"https://cursos.alura.com.br/certificate/1d205fd6-d1ce-4f13-8470-8877f85be748?lang=pt_BR"
     },
     {
         "id":"4",
         "tipo":"HTML e CSS",
-        "imagem":"/Certificados/HTML__CSS/CSS1.PNG",
+        "imagem":"https://raw.githubusercontent.com/Joao0028/imagensPortfolio/main/Certificados/HTML__CSS/CSS1.PNG",
         "link":"https://cursos.alura.com.br/certificate/7ed4bf64-4ab7-4809-84ec-56577da83e4b?lang=pt_BR"
     }
 ]
