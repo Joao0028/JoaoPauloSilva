@@ -1,12 +1,12 @@
 import { memo, useRef, useState } from "react"
 import styles from "./Email.module.scss"
 import emailjs from "@emailjs/browser"
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import stylesLoader from "./LoaderEmail.module.scss"
 
 const Email = () => {
-
+    const aoEnviarEmail = useRef("")
     const [nome, setNome] = useState("");
     const [email, setEmail] = useState("");
     const [assunto, setAssunto] = useState("");
@@ -120,15 +120,18 @@ const Email = () => {
                     setEmail("");
                     setAssunto("");
                     setMensagem("");
+                    aoEnviarEmail.current.focus();
                 }, (erro) => {
                     setLoading(false)
                     notifyLimiteMaximoMensal()
                     console.log("Erro: ", erro);
+                    aoEnviarEmail.current.focus();
                 })
         } else {
             // Chamar a função notifyError
             setLoading(false)
             notifyError();
+            aoEnviarEmail.current.focus();
         }
     }
 
@@ -140,7 +143,7 @@ const Email = () => {
     <form className="flex flex-col gap-2 min-[880px]:w-[500px] min-[1280px]:w-[600px] min-[1534px]:w-[650px]" onSubmit={enviarEmail} ref={formRef} >
 
         <div className="max-sm:flex-col min-[880px]:flex-col xl:flex-row flex gap-2 ">
-            <input value={nome} id={styles.campoNome} required placeholder="Nome" className="text-cor-roxo max-lg:w-[100%] min-lg:w-[50%] xl:w-[50%]  campoEmail paragrafos " type="text" autoComplete="name" name="Nome" onChange={(e) => setNome(e.target.value)} />
+            <input value={nome} id={styles.campoNome} required ref={aoEnviarEmail} placeholder="Nome" className="text-cor-roxo max-lg:w-[100%] min-lg:w-[50%] xl:w-[50%]  campoEmail paragrafos " type="text" autoComplete="name" name="Nome" onChange={(e) => setNome(e.target.value)}/>
             <input value={email} id={styles.campoEmail} required placeholder="E-mail" className="max-lg:w-[100%] min-lg:w-[50%] xl:w-[50%]  campoEmail paragrafos " type="email" autoComplete="email" name="Email" onChange={(e) => setEmail(e.target.value)} />
         </div>
 
