@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Suspense, lazy } from "react";
+import Carregando from "./Paginas/Carregando";
 
 const PaginaComponentes = lazy(() => import("./Paginas/PaginaComponentes"));
 const NaoEncontrada = lazy(() => import("./Paginas/NaoEncontrada"));
@@ -14,7 +15,7 @@ export default function App() {
     <>
       <ToastContainer limit={1} />
       <BrowserRouter>
-        <Suspense fallback={<h1 className="font-bold text-[22px] pl-2 pt-2">Carregando...</h1>}>
+        <Suspense fallback={<Carregando/>}>
           <Routes>
             <Route path="/" element={<PaginaComponentes />} />
             <Route path="/Certificados" element={<PaginaDeCertificados />} />

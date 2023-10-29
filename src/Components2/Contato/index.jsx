@@ -1,4 +1,4 @@
-import { Email } from "../Email"
+import Email from "../Email"
 import setaParaBaixo from "../../assets/Svgs/teste.svg"
 
 export default function Contato() {

@@ -7,6 +7,7 @@ import CurriculoPersonalizado from "../../assets/CurriculoPersonalizado.pdf"
 import CurriculoPadrao from "../../assets/CurriculoPadrão.pdf"
 import { saveAs } from "file-saver"
 
+
 export default function Inicio() {
     function fazDownloadDoCurriculo(valor){
         const url = valor;
@@ -33,6 +34,7 @@ export default function Inicio() {
             <div className="container flex justify-between">
                 <nav className="text-cor-preto dark:text-cor-branco flex ml-2 md:ml-0 justify-center  flex-col md:w-[50%]">
                     <div>
+                        
                         <h1 className="font-bold text-[16px] sm:text-[18px] lg:text-[25px] xl:text-[30px]">Olá, o meu nome é <strong className="hidden dark:contents text-cor-roxo">João Paulo</strong> <strong className="dark:hidden" id={styles.frase}>João Paulo</strong></h1>
                         <h1 className=" text-[12px] sm:text-[15px] lg:text-[22px] xl:text-[24px] font-medium">Eu sou um desenvolvedor web Front-end.</h1>
 
