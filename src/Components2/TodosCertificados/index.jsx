@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { CertificadoTwo } from "../CertificadoTwo/index"
+import { CertificadoTwo } from "./CertificadoTwo/index"
 import certificados from "./json/Certificados.json"
 import { memo } from "react"
 

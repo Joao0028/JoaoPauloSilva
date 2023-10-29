@@ -1,5 +1,5 @@
 import { memo } from "react";
-import Projeto from "../Projeto";
+import Projeto from "./Projeto";
 import meusProjetos from "./json/projetos.json"
 import { Link } from "react-router-dom";
 

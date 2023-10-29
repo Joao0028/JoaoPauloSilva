@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import { Certificado } from "../Certificado/index"
+import { Certificado } from "./Certificado/index"
 import styles from "./Certificados.module.scss"
 import certificados from "./json/Certificados.json"
 

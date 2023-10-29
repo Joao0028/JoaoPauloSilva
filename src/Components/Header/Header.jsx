@@ -2,7 +2,7 @@ import { SlMenu } from "react-icons/sl"
 import { TfiClose} from "react-icons/tfi"
 import { TrocaTema } from "../TrocaTema"
 import { useState } from "react"
-import MenuMobile from "../MenuMobile"
+import MenuMobile from "./MenuMobile"
 import { Link } from "react-scroll"
 import styles from "./Header.module.scss"
 
