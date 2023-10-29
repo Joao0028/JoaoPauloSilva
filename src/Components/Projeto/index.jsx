@@ -27,7 +27,9 @@ export default function Projeto({ titulo, subtitulo, descricao, imagem, linkProj
         <div id={styles.containerImagem}>
             <a target="_blank" href={linkProjeto}><img className="w-[100%] max-w-[768px] border-solid border-b-2 lg:border-b-[3px] xl:border-b-4 border-cor-azulClaroPrincipal dark:border-cor-roxo min-sm:shadow-xl 
             md:w-[320px] lg:w-[420px] 2xl:w-[550px] hover:opacity-90  max-sm:border-none max-sm:rounded-2xl
-            " src={imagem} alt={`Uma imagem do projeto ${titulo}.`} /></a>
+            " src={imagem} alt={`Uma imagem do projeto ${titulo}.`} 
+            loading="lazy"
+            /></a>
         </div>
 
     </div>

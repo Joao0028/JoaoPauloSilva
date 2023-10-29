@@ -9,6 +9,7 @@ export const CertificadoTwo = ({ tipo, imagem, link }) => {
     "
             src={imagem}
             alt={`Um certificado conquistado por João Paulo sobre ${tipo}`}
+            loading="lazy"
         />
     </a>
 }
