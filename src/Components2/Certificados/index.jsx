@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import { Certificado } from "./Certificado/index"
 import styles from "./Certificados.module.scss"
-import certificados from "./json/Certificados.json"
+import json from "../../assets/json/PortfolioJPS.json"
 
 export default function Certificados() {
     return <><section id={styles.container} className="flex justify-center md:py-32 w-full  py-20 text-cor-branco bg-gradient-to-b from-cor-azulClaroPrincipal to-cor-azulEscuro  dark:bg-gradient-to-r dark:from-cor-roxo dark:to-cor-azulClaroPrincipal">
@@ -12,7 +12,7 @@ export default function Certificados() {
 
             <div className="flex gap-8 flex-wrap justify-center md:justify-around lg:justify-between mt-10">
                 {
-                    certificados.map((certificado) => {
+                    json.algunsCertificados.map((certificado) => {
                         return (
                             <Certificado
                                 key={certificado.id}

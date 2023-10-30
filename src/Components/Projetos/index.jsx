@@ -1,16 +1,15 @@
 import { memo } from "react";
 import Projeto from "./Projeto";
-import meusProjetos from "./json/projetos.json"
 import { Link } from "react-router-dom";
+import json from "../../assets/json/PortfolioJPS.json"
 
 function Projetos() {
     return <section className="flex justify-center">
-
         <div className="container">
             <h1 className="titulosDeSecoes text-cor-preto dark:text-cor-branco mb-[2em]">Projetos</h1>
 
             <nav className="flex max-[640px]:justify-center flex-col md:mb-16 ">
-                {meusProjetos.map((projeto) => {
+                {json.projetos.map((projeto) => {
                     return (
                         <Projeto
                             key={projeto.id}
