@@ -41,6 +41,7 @@ export default function PaginaDeProjetos() {
               Voltar
             </Link>
             <a
+              title="Ir para repositórios com projetos de João Paulo no GitHub."
               href="https://github.com/Joao0028?tab=repositories"
               className="max-sm:rounded-sm px-4 flex justify-center cursor-pointer  bg-cor-azulClaroPrincipal text-cor-branco py-3 hover:hover:opacity-90 font-bold dark:bg-cor-roxo max-md:mt-4  md:mt-6"
               target="_blank"
