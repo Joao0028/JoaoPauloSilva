@@ -1,3 +1,3 @@
-export const Botao = ({ link, texto, target, downloaD }) => {
-    return <a href={link} target={target} download={downloaD}><button className=" botaoInicioPadrao botaoInicioSm max-sm:rounded-sm">{texto}</button></a>
+export const Botao = ({ link, texto, target, downloaD, title }) => {
+    return <a href={link} title={title} target={target} download={downloaD}><button className=" botaoInicioPadrao botaoInicioSm max-sm:rounded-sm">{texto}</button></a>
 }

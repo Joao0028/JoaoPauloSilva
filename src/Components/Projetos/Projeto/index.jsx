@@ -18,15 +18,15 @@ export default function Projeto({ titulo, subtitulo, descricao, imagem, linkProj
             <p className="text-justify paragrafos font-medium">{descricao}</p>
 
             <div className="flex gap-4 max-[400px]:justify-between mt-2">
-                <a target="_blank" className="max-[640px]:w-[130px] sm:w-[135px] lg:w-[162px]  2xl:w-[182px] text-[12px] 2xl:text-[18px] sm:text-[13px] lg:text-[15px] hover:hover:opacity-90  font-bold bg-cor-pretoEscuro dark:bg-cor-cinzaClaro text-cor-branco text-center py-[0.75rem] max-sm:rounded-sm" href={linkProjeto}>Ver projeto</a>
-                <a target="_blank" className="max-[640px]:w-[130px] sm:w-[135px] lg:w-[162px]  2xl:w-[182px] text-[12px] 2xl:text-[18px] sm:text-[13px] lg:text-[15px] hover:hover:opacity-90  font-bold bg-cor-pretoEscuro dark:bg-cor-cinzaClaro text-cor-branco text-center py-[0.75rem] max-sm:rounded-sm" href={linkRepositorio}>Ver Repositório</a>
+                <a title={`Ver projeto ${titulo} na web.`} target="_blank" className="max-[640px]:w-[130px] sm:w-[135px] lg:w-[162px]  2xl:w-[182px] text-[12px] 2xl:text-[18px] sm:text-[13px] lg:text-[15px] hover:hover:opacity-90  font-bold bg-cor-pretoEscuro dark:bg-cor-cinzaClaro text-cor-branco text-center py-[0.75rem] max-sm:rounded-sm" href={linkProjeto}>Ver projeto</a>
+                <a title={`Ver repositório com o código do projeto ${titulo} no GitHub.`} target="_blank" className="max-[640px]:w-[130px] sm:w-[135px] lg:w-[162px]  2xl:w-[182px] text-[12px] 2xl:text-[18px] sm:text-[13px] lg:text-[15px] hover:hover:opacity-90  font-bold bg-cor-pretoEscuro dark:bg-cor-cinzaClaro text-cor-branco text-center py-[0.75rem] max-sm:rounded-sm" href={linkRepositorio}>Ver Repositório</a>
             </div>
         </div>
 
         <div id={styles.containerImagem}>
-            <a target="_blank" href={linkProjeto}><img className="w-[100%] max-w-[768px] border-solid border-b-2 lg:border-b-[3px] xl:border-b-4 border-cor-azulClaroPrincipal dark:border-cor-roxo min-sm:shadow-xl 
+            <a title={`Ver o projeto ${titulo} feito por João Paulo Silva.`} target="_blank" href={linkProjeto}><img className="w-[100%] max-w-[768px] border-solid border-b-2 lg:border-b-[3px] xl:border-b-4 border-cor-azulClaroPrincipal dark:border-cor-roxo min-sm:shadow-xl 
             md:w-[320px] lg:w-[420px] 2xl:w-[550px] hover:opacity-90  max-sm:border-none max-sm:rounded-2xl
-            " src={imagem} alt={`Uma imagem do projeto ${titulo}.`} 
+            " src={imagem} alt={`Uma imagem do projeto ${titulo} feito por João Paulo Silva.`} 
             loading="lazy"
             /></a>
         </div>

@@ -28,7 +28,7 @@ export const SobreMim = () => {
                         <p className="2xl:mb-8 text-[13px] mb-3 sm:mb-2 sm:text-[14px] text-justify md:text-[14px] md:mb-3 lg:mb-4 lg:text-[15px] 2xl:text-[18px] ">Meu objetivo é ingressar no mercado de trabalho na <strong className="dark:text-cor-roxo">área de tecnologia</strong>, seja como <strong className="dark:text-cor-roxo">desenvolvedor júnior</strong> ou <strong className="dark:text-cor-roxo">estagiário</strong>. Estou aberto a<strong className="dark:text-cor-roxo"> qualquer oportunidade relacionada à tecnologia</strong>, pois acredito que essa seja uma maneira de iniciar minha carreira profissional como desenvolvedor e aplicar meus conhecimentos teóricos na prática. Eu estou aqui para te ajudar, <strong className="dark:text-cor-roxo">vamos fazer á diferença juntos!</strong></p></div>
                 </div>
 
-                <VerMais target="_blank" texto="Ver mais" link="https://joao0028.github.io/Ladding-Page-Curriculo/" />
+                <VerMais title="Ir para uma landing page de João Paulo, onde explica com mais detalhes sobre ele." target="_blank" texto="Ver mais" link="https://joao0028.github.io/Ladding-Page-Curriculo/" />
             </div>
         </section>
         <strong id="projetos"></strong>

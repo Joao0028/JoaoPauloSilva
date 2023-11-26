@@ -26,7 +26,7 @@ export default function Certificados() {
             </div>
 
 
-            <Link className="flex m-auto justify-center cursor-pointer lg:w-[155px] text-[12px] 2xl:text-[18px] sm:text-[14px] lg:text-[16px] w-[120px] sm:w-[120px]  bg-cor-pretoEscuro text-cor-branco py-3 hover:hover:opacity-90 font-bold dark:bg-cor-cinzaClaro max-md:mt-12  md:mt-20 max-sm:rounded-sm" to="/Certificados">Ver Mais</Link>
+            <Link title="Ir para seção de Certificados, onde estão todos os certificados de João Paulo." className="flex m-auto justify-center cursor-pointer lg:w-[155px] text-[12px] 2xl:text-[18px] sm:text-[14px] lg:text-[16px] w-[120px] sm:w-[120px]  bg-cor-pretoEscuro text-cor-branco py-3 hover:hover:opacity-90 font-bold dark:bg-cor-cinzaClaro max-md:mt-12  md:mt-20 max-sm:rounded-sm" to="/Certificados">Ver Mais</Link>
 
         </nav>
 

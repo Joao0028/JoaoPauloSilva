@@ -25,7 +25,7 @@ export const TrocaTema = () => {
     }
 
     return <div>
-        <BsSun className="hover:scale-110 hover:text-cor-azulClaroPrincipal dark:hover:text-cor-roxo text-[22px] md:text-[22px] lg:text-[27px]  text-white cursor-pointer hidden dark:block" onClick={muda} />
-        <BsMoon className="hover:scale-110 hover:text-cor-azulClaroPrincipal dark:hover:text-cor-roxo text-[20px] md:text-[20px] lg:text-[26px]  text-texto-preto cursor-pointer block dark:hidden" onClick={muda} />
+        <BsSun title="Mudar o tema do Portfólio para claro." className="hover:scale-110 hover:text-cor-azulClaroPrincipal dark:hover:text-cor-roxo text-[22px] md:text-[22px] lg:text-[27px]  text-white cursor-pointer hidden dark:block" onClick={muda} />
+        <BsMoon title="Mudar o tema do Portfólio para escuro." className="hover:scale-110 hover:text-cor-azulClaroPrincipal dark:hover:text-cor-roxo text-[20px] md:text-[20px] lg:text-[26px]  text-texto-preto cursor-pointer block dark:hidden" onClick={muda} />
     </div>
 }

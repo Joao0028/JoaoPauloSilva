@@ -41,23 +41,23 @@ export default function Inicio() {
                         <div className="hidden dark:block">
                             <Botao target={"_blank"} link="https://github.com/Joao0028" texto="Github" />
                             <Botao target={"_blank"} link="https://www.linkedin.com/in/jo%C3%A3o-paulo-nascimento-silva/" texto="LinkedIn" />
-                            <select onChange={recebeOcurriculo} className="dark:inline  botaoInicioPadrao botaoInicioSm botaoSelect max-sm:rounded-sm"  defaultValue="">
+                            <select title="Ver opções de curriculo." onChange={recebeOcurriculo} className="dark:inline  botaoInicioPadrao botaoInicioSm botaoSelect max-sm:rounded-sm"  defaultValue="">
                                 <option value="" className="hidden" disabled>Currículo</option>
-                                <option className="optionStyle" value={CurriculoPadrao}>Padrão</option>
-                                <option className="optionStyle" value={CurriculoPersonalizado} >Personalizado</option>
-                                <option className="optionStyle" value="https://joao0028.github.io/Ladding-Page-Curriculo/" >Landing Page</option>
+                                <option title="Fazer download do currículo padrão - sem estilos para facilitar alguns recrutadores." className="optionStyle" value={CurriculoPadrao}>Padrão</option>
+                                <option title="Fazer download do currículo personalizado." className="optionStyle" value={CurriculoPersonalizado} >Personalizado</option>
+                                <option title="Você será redirecionado a um curriculo em formato de landing page personalizada." className="optionStyle" value="https://joao0028.github.io/Ladding-Page-Curriculo/" >Landing Page</option>
                             </select>
                         </div>
 
                         <div className="block dark:hidden">
-                            <BotaoWhite target={"_blank"} link="https://github.com/Joao0028" texto="Github" />
-                            <BotaoWhite target={"_blank"} link="https://www.linkedin.com/in/jo%C3%A3o-paulo-nascimento-silva/" texto="LinkedIn" />
+                            <BotaoWhite title="Ir para o GitHub de João." target={"_blank"} link="https://github.com/Joao0028" texto="Github" />
+                            <BotaoWhite title="Ir para o LinkedIn de João." target={"_blank"} link="https://www.linkedin.com/in/jo%C3%A3o-paulo-nascimento-silva/" texto="LinkedIn" />
                             
-                        <select onChange={recebeOcurriculo} className="dark:hidden"  defaultValue="" id={styles.botao}>
+                        <select title="Ver opções de curriculo." onChange={recebeOcurriculo} className="dark:hidden"  defaultValue="" id={styles.botao}>
                             <option value="" className="hidden" disabled>Currículo</option>
-                            <option className="optionStyle" value={CurriculoPadrao}>Padrão</option>
-                            <option className="optionStyle" value={CurriculoPersonalizado} >Personalizado</option>
-                            <option className="optionStyle" value="https://joao0028.github.io/Ladding-Page-Curriculo/" >Landing Page</option>
+                            <option title="Fazer download do currículo padrão - sem estilos para facilitar alguns recrutadores." className="optionStyle" value={CurriculoPadrao}>Padrão</option>
+                            <option title="Fazer download do currículo personalizado." className="optionStyle" value={CurriculoPersonalizado} >Personalizado</option>
+                            <option title="Você será redirecionado a um curriculo em formato de landing page." className="optionStyle" value="https://joao0028.github.io/Ladding-Page-Curriculo/" >Landing Page</option>
                         </select>
                         </div>
                         
@@ -65,8 +65,8 @@ export default function Inicio() {
 
                 </nav>
                 <div id={styles.containerImagem} className="hidden md:block ml-6">
-                    <img id={styles.teste} className="dark:hidden block" src={ProgramadorWhite} alt="Uma imagem animada de um programador codando em sua mesa" />
-                    <img className="dark:block hidden" src={ProgramadorBlack} alt="Uma imagem animada de um programador codando em sua mesa" />
+                    <img id={styles.teste} className="dark:hidden block" src={ProgramadorWhite} alt="Uma imagem ilustrativa e animada, de um homem branco de cabelo preto sentado em uma cadeira, atrás de uma mesa com um computador e um notebook, de dia, com um gradiente de fundo azul combinando com o tema do portfólio." />
+                    <img className="dark:block hidden" src={ProgramadorBlack} alt="Uma imagem ilustrativa e animada, de um homem branco de cabelo preto sentado em uma cadeira, atrás de uma mesa com um computador e um notebook, de noite, com um gradiente de fundo roxo combinando com o tema do portfólio." />
                 </div>
             </div>
         </section>

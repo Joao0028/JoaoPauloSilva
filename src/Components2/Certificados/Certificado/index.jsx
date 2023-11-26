@@ -3,6 +3,7 @@ import styles from "./Certificado.module.scss";
 export const Certificado = ({ tipo, imagem, link }) => {
   return (
     <a
+      title={`Um certificado conquistado por João Paulo, sobre ${tipo}.`}
       target="_blank"
       href={link}
       id={styles.container}
