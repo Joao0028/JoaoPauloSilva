@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&family=Sora:wght@200;300;400;500;600;700;800&display=swap'); 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,800;1,900&family=Sora:wght@200;300;400;500;600;700;800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -7,6 +7,12 @@
 @layer base {
   html {
     font-family: "Sora", sans-serif;
+  }
+
+  body{
+    //Remove zoom da página no mobile
+    touch-action: none;
+    user-select: none;
   }
 
   body::-webkit-scrollbar {
@@ -67,14 +73,14 @@
     @apply font-bold text-cor-cinzaSubtituloWhite dark:text-cor-cinzaSubtituloWhite whitespace-nowrap text-center;
   }
 
-  .botaoSelect{
+  .botaoSelect {
     -webkit-appearance: none; /* Remove a seta no Safari e no Chrome */
     -moz-appearance: none; /* Remove a seta no Firefox */
-    appearance: none; 
-    @apply text-center border-0 outline-none
+    appearance: none;
+    @apply text-center border-0 outline-none;
   }
 
   .optionStyle {
-    @apply text-cor-preto font-medium dark:text-cor-roxo max-sm:text-[10px]  max-lg:text-[13px]
+    @apply text-cor-preto font-medium dark:text-cor-roxo max-sm:text-[10px]  max-lg:text-[13px];
   }
 }
