@@ -4,7 +4,7 @@ import ErrorWhite from "../../assets/Svgs/Error404White.svg";
 import ErrorBlack from "../../assets/Svgs/Error404Black.svg";
 import Footer from "../../Components2/Footer";
 
-export const NaoEncontrada = () => {
+export default function NaoEncontrada(){
   return (
     <>
       <HeaderTwo />
