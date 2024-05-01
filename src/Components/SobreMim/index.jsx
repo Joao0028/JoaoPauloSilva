@@ -16,8 +16,6 @@ export const SobreMim = () => {
         }
         return age
     }
-
-    console.log(myAge());
     return <>
         <strong id="sobre"></strong>
         <section id={styles.container} className="flex text-cor-branco justify-center md:py-32 w-full  py-20  bg-gradient-to-b from-cor-azulClaroPrincipal to-cor-azulEscuro  dark:bg-gradient-to-r dark:from-cor-cinza dark:to-cor-cinza ">

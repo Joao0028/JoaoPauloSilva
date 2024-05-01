@@ -44,8 +44,8 @@ export default function Inicio() {
                             <select title="Ver opções de curriculo." onChange={recebeOcurriculo} className="dark:inline  botaoInicioPadrao botaoInicioSm botaoSelect max-sm:rounded-sm"  defaultValue="">
                                 <option value="" className="hidden" disabled>Currículo</option>
                                 <option title="Fazer download do currículo padrão - sem estilos para facilitar alguns recrutadores." className="optionStyle" value={CurriculoPadrao}>Padrão</option>
-                                <option title="Fazer download do currículo personalizado." className="optionStyle" value={CurriculoPersonalizado} >Personalizado</option>
-                                <option title="Você será redirecionado a um curriculo em formato de landing page personalizada." className="optionStyle" value="https://joao0028.github.io/Ladding-Page-Curriculo/" >Landing Page</option>
+                                <option title="Fazer download do currículo personalizado." className="optionStyle" value={CurriculoPersonalizado}>Personalizado</option>
+                                <option title="Você será redirecionado a um currículo em formato de landing page personalizada." className="optionStyle" value="https://joao0028.github.io/Ladding-Page-Curriculo/" >Landing Page</option>
                             </select>
                         </div>
 
